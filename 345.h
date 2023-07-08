@@ -19,7 +19,7 @@ public:
             }
         }
 
-        for(int i = 0; i < vecIndex.size(); i++)
+        for (int i = 0; i < vecIndex.size(); i++)
         {
             int index = vecIndex[i];
             char c = vecChar[vecChar.size() - 1 - i];
