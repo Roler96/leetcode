@@ -8,7 +8,7 @@ public:
     void moveZeroes(vector<int> &nums)
     {
         int pos = 0, cur = 0;
-        while(pos != nums.size())
+        while (pos != nums.size())
         {
             if (nums[pos] != 0)
             {
@@ -17,7 +17,7 @@ public:
             }
             pos++;
         }
-        while(cur != nums.size())
+        while (cur != nums.size())
         {
             nums[cur] = 0;
             cur++;
