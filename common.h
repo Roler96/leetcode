@@ -9,4 +9,5 @@
 #include <set>
 
 #include <algorithm>
+#include <numeric>
 #include <cmath>
