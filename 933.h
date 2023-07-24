@@ -14,6 +14,7 @@ public:
         m_queue.push(t);
         while (t - m_queue.front() > 3000)
             m_queue.pop();
+        return m_queue.size();
     }
 
 private:
