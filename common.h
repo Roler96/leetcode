@@ -23,6 +23,16 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
 inline ListNode *initListNode(const std::vector<int> &vec)
 {
     ListNode *head = nullptr;
@@ -46,7 +56,7 @@ inline ListNode *initListNode(const std::vector<int> &vec)
 inline void deinitListNode(ListNode *head)
 {
     ListNode *node = head;
-    while(node)
+    while (node)
     {
         ListNode *p = node;
         node = node->next;
@@ -57,7 +67,7 @@ inline void deinitListNode(ListNode *head)
 inline void printListNode(ListNode *head)
 {
     std::cout << "ListNode(" << head << "):" << std::endl;
-    while(head)
+    while (head)
     {
         std::cout << head->val << " \n"[head->next == nullptr];
         head = head->next;
