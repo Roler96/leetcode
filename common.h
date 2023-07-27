@@ -87,19 +87,28 @@ inline TreeNode *initTreeNode(const std::vector<int> &vec, int invalid)
         else
             nodeVector.push_back(nullptr);
     }
-    for (int i = 0; i < nodeVector.size(); i++)
+    TreeNode *root = nodeVector[0];
+    int pos = 1;
+    std::queue<TreeNode *> que;
+    que.push(root);
+    while (!que.empty())
     {
-        if (nodeVector[i])
-        {
-            int leftIndex = i * 2 + 1;
-            int rightIndex = (i + 1) * 2;
-            if (leftIndex < nodeVector.size())
-                nodeVector[i]->left = nodeVector[leftIndex];
-            if (rightIndex < nodeVector.size())
-                nodeVector[i]->right = nodeVector[rightIndex];
-        }
+        TreeNode *node = que.front();
+        que.pop();
+
+        node->left = nodeVector[pos++];
+        if (pos == nodeVector.size())
+            break;
+        node->right = nodeVector[pos++];
+        if (pos == nodeVector.size())
+            break;
+
+        if (node->left)
+            que.push(node->left);
+        if (node->right)
+            que.push(node->right);
     }
-    return nodeVector[0];
+    return root;
 }
 
 inline void deinitTreeNode(TreeNode *root)
