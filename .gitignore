@@ -1,0 +1,50 @@
+# 编译生成的文件
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# CMake 文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build/
+Makefile
+
+# VS Code 文件夹
+.vscode/
+
+# 日志和调试文件
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 用户生成的依赖文件
+*.d
+
+# 配置文件和IDE配置
+config.json
+.idea/
+.project
+.classpath
+.cproject
+*.code-workspace
+*.xcworkspace/
+
+# 输出目录
+out/
