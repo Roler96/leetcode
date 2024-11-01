@@ -32,7 +32,7 @@ SpacesInSquareBrackets: false
 # 对齐连续赋值语句
 AlignConsecutiveAssignments: true
 # 对齐连续声明语句
-AlignConsecutiveDeclarations: true
+AlignConsecutiveDeclarations: false
 
 ### 函数和参数的格式设置
 # 在函数声明或调用时对齐参数
