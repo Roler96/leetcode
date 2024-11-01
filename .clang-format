@@ -1,0 +1,62 @@
+---
+### 基本样式
+# LLVM, Google, Chromium, Mozilla, WebKit
+BasedOnStyle: LLVM
+
+### 缩进相关设置
+# 设置缩进宽度为4空格
+IndentWidth: 4
+# Tab宽度设为4空格
+TabWidth: 4
+# 不使用Tab进行缩进
+UseTab: Never
+
+### 换行相关设置
+# 每行的最大字符数
+ColumnLimit: 100
+# 括号换行风格，Allman风格在新行开始处加花括号
+# Attach, Allman, GNU, Linux, Stroustrup, Whitesmiths
+BreakBeforeBraces: Attach
+# 禁止单行 if 语句
+AllowShortIfStatementsOnASingleLine: false  
+
+### 空格相关设置
+# 控制语句的括号前添加空格 (如if, while)
+SpaceBeforeParens: ControlStatements
+# 括号内无空格
+SpacesInParentheses: false
+# 中括号内无空格
+SpacesInSquareBrackets: false
+
+### 对齐相关设置
+# 对齐连续赋值语句
+AlignConsecutiveAssignments: true
+# 对齐连续声明语句
+AlignConsecutiveDeclarations: true
+
+### 函数和参数的格式设置
+# 在函数声明或调用时对齐参数
+AlignAfterOpenBracket: Align
+# 允许单行短函数体
+AllowShortFunctionsOnASingleLine: InlineOnly
+
+### 注释相关设置
+# 自动换行长注释
+ReflowComments: true
+# 自动排序include头文件
+SortIncludes: true
+# 重新分组include头文件
+IncludeBlocks: Regroup
+
+### 命名空间设置
+# 命名空间内无额外缩进
+NamespaceIndentation: None
+
+### 类和结构体的格式设置
+# 修饰符(public/private等)缩进
+AccessModifierOffset: -4
+# 构造函数初始化列表缩进
+ConstructorInitializerIndentWidth: 4
+# 不允许单行代码块
+AllowShortBlocksOnASingleLine: false
+...
