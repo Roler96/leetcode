@@ -2,7 +2,10 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
 };
+
+int main() {
+    return 0;
+}
