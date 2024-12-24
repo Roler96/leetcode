@@ -119,3 +119,4 @@ inline void deinitTreeNode(TreeNode *root)
     deinitTreeNode(root->right);
     delete root;
 }
+
